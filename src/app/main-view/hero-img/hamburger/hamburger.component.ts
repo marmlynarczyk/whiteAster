@@ -24,7 +24,9 @@ export class HamburgerComponent implements OnInit, OnDestroy {
     this.subscription.unsubscribe();
   }
   hamburgerClick() {
-    this.menuState.toggle();
-    this.notifications.closeAllNotifications();
+    if(this.menuOpen===false){
+      this.notifications.closeAllNotifications();
+    }
+    this.menuState.toggle();    
   }
 }

@@ -1,0 +1,462 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200727.151149.27380.0.001.json",
+    "dumpEventTime": "2020-07-27T15:11:49Z",
+    "dumpEventTimeStamp": "1595855509325",
+    "processId": 27380,
+    "cwd": "C:\\angular\\whiteaster",
+    "commandLine": [
+      "node",
+      "C:\\Users\\mario\\AppData\\Roaming\\npm\\\\node_modules\\@angular\\cli\\bin\\ng",
+      "serve"
+    ],
+    "nodejsVersion": "v12.16.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.1",
+      "v8": "7.8.279.23-node.31",
+      "uv": "1.34.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.1/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Home",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz",
+        "speed": 2395,
+        "user": 3827640,
+        "nice": 0,
+        "sys": 6262750,
+        "idle": 86253140,
+        "irq": 1304171
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz",
+        "speed": 2395,
+        "user": 3436421,
+        "nice": 0,
+        "sys": 3496359,
+        "idle": 89410421,
+        "irq": 87531
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz",
+        "speed": 2395,
+        "user": 7351265,
+        "nice": 0,
+        "sys": 5345984,
+        "idle": 83645953,
+        "irq": 49562
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz",
+        "speed": 2395,
+        "user": 3697375,
+        "nice": 0,
+        "sys": 2726781,
+        "idle": 89919046,
+        "irq": 50687
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz",
+        "speed": 2395,
+        "user": 4955578,
+        "nice": 0,
+        "sys": 4742953,
+        "idle": 86644671,
+        "irq": 44187
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz",
+        "speed": 2395,
+        "user": 3442562,
+        "nice": 0,
+        "sys": 3337953,
+        "idle": 89562671,
+        "irq": 37562
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz",
+        "speed": 2395,
+        "user": 4868390,
+        "nice": 0,
+        "sys": 4150171,
+        "idle": 87324625,
+        "irq": 42937
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz",
+        "speed": 2395,
+        "user": 4311328,
+        "nice": 0,
+        "sys": 2937609,
+        "idle": 89094250,
+        "irq": 24828
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "24:fd:52:aa:3f:40",
+        "address": "fe80::ad35:fa5e:1066:162a",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 5
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "24:fd:52:aa:3f:40",
+        "address": "192.168.1.103",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "DESKTOP-BS13ADS"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff71fff19f9",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff71fff5e1c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff71fff4dd8",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7200f34cb",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff720909f4e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7208f2021",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7207be57c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7207c6521",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7207bbb13",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7207ba184",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7207db36d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff720540c51",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff720d54ddd",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000003de7282db8e",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 261808128,
+    "totalCommittedMemory": 261808128,
+    "usedMemory": 240141568,
+    "availableMemory": 1957461632,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1047456,
+        "used": 1047408,
+        "available": 48
+      },
+      "old_space": {
+        "memorySize": 185745408,
+        "committedMemory": 185745408,
+        "capacity": 185150776,
+        "used": 170146440,
+        "available": 15004336
+      },
+      "code_space": {
+        "memorySize": 4100096,
+        "committedMemory": 4100096,
+        "capacity": 3873088,
+        "used": 3176768,
+        "available": 696320
+      },
+      "map_space": {
+        "memorySize": 8916992,
+        "committedMemory": 8916992,
+        "capacity": 8905984,
+        "used": 4199680,
+        "available": 4706304
+      },
+      "large_object_space": {
+        "memorySize": 61112320,
+        "committedMemory": 61112320,
+        "capacity": 60994176,
+        "used": 60994176,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 544288,
+        "used": 544288,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047456,
+        "used": 0,
+        "available": 1047456
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 37.093,
+    "kernelCpuSeconds": 10.718,
+    "cpuConsumptionPercent": 6.20117,
+    "maxRss": 491102208,
+    "pageFaults": {
+      "IORequired": 436474,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 5547,
+      "writes": 10
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=::": "::\\",
+    "=C:": "C:\\angular\\whiteaster",
+    "=ExitCode": "00000000",
+    "aliases": "C:\\Users\\mario\\Downloads\\cmder\\config\\user_aliases.cmd",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "ANSICON": "118x1000 (118x29)",
+    "ANSICON_DEF": "7",
+    "APPDATA": "C:\\Users\\mario\\AppData\\Roaming",
+    "architecture": "64",
+    "architecture_bits": "64",
+    "BROWSERSLIST_IGNORE_OLD_DATA": "1",
+    "CAMLIBS": "C:\\Program Files\\darktable\\lib\\libgphoto2\\2.5.23",
+    "ccall": "call C:\\Users\\mario\\Downloads\\cmder\\vendor\\bin\\cexec.cmd",
+    "cexec": "C:\\Users\\mario\\Downloads\\cmder\\vendor\\bin\\cexec.cmd",
+    "CMDER_ALIASES": "1",
+    "CMDER_CLINK": "1",
+    "CMDER_CONFIGURED": "1",
+    "CMDER_INIT_END": "14:12:59,06",
+    "CMDER_INIT_START": "14:12:56,42",
+    "CMDER_ROOT": "C:\\Users\\mario\\Downloads\\cmder",
+    "CMDER_SHELL": "cmd",
+    "CMDER_USER_FLAGS": " ",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-BS13ADS",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "ConEmuANSI": "ON",
+    "ConEmuAnsiLog": "",
+    "ConEmuArgs": "/Icon \"C:\\Users\\mario\\Downloads\\cmder\\icons\\cmder.ico\" /Title Cmder",
+    "ConEmuArgs2": "",
+    "ConEmuBackHWND": "0x001B1796",
+    "ConEmuBaseDir": "C:\\Users\\mario\\Downloads\\cmder\\vendor\\conemu-maximus5\\ConEmu",
+    "ConEmuBaseDirShort": "C:\\Users\\mario\\Downloads\\cmder\\vendor\\conemu-maximus5\\ConEmu",
+    "ConEmuBuild": "180626",
+    "ConEmuCfgDir": "C:\\Users\\mario\\Downloads\\cmder\\vendor\\conemu-maximus5",
+    "ConEmuConfig": "",
+    "ConEmuDir": "C:\\Users\\mario\\Downloads\\cmder\\vendor\\conemu-maximus5",
+    "ConEmuDrawHWND": "0x00111928",
+    "ConEmuDrive": "C:",
+    "ConEmuHooks": "Enabled",
+    "ConEmuHWND": "0x000904AC",
+    "ConEmuPalette": "Monokai",
+    "ConEmuPID": "26204",
+    "ConEmuServerPID": "22200",
+    "ConEmuTask": "{cmd::Cmder}",
+    "ConEmuWorkDir": "C:\\Users\\mario\\Downloads\\cmder",
+    "ConEmuWorkDrive": "C:",
+    "debug_output": "0",
+    "dp0": "C:\\Users\\mario\\AppData\\Roaming\\npm\\",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "fast_init": "0",
+    "feFlagName": " ",
+    "GIT_INSTALL_ROOT": "C:\\Users\\mario\\Downloads\\cmder\\vendor\\git-for-windows",
+    "HOME": "C:\\Users\\mario",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\mario",
+    "IOLIBS": "C:\\Program Files\\darktable\\lib\\libgphoto2_port\\0.12.0",
+    "LANG": "pl_PL.UTF-8",
+    "lib_base": "call \"C:\\Users\\mario\\Downloads\\cmder\\vendor\\lib\\lib_base.cmd\"",
+    "lib_console": "call \"C:\\Users\\mario\\Downloads\\cmder\\vendor\\lib\\lib_console.cmd\"",
+    "lib_git": "call \"C:\\Users\\mario\\Downloads\\cmder\\vendor\\lib\\lib_git.cmd\"",
+    "lib_path": "call \"C:\\Users\\mario\\Downloads\\cmder\\vendor\\lib\\lib_path.cmd\"",
+    "lib_profile": "call \"C:\\Users\\mario\\Downloads\\cmder\\vendor\\lib\\lib_profile.cmd\"",
+    "LOCALAPPDATA": "C:\\Users\\mario\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-BS13ADS",
+    "MAGICK_HOME": "C:\\Program Files\\darktable\\lib\\GraphicsMagick-1.3.35\\modules-Q8\\coders",
+    "max_depth": "1",
+    "nix_tools": "1",
+    "NUMBER_OF_PROCESSORS": "8",
+    "OneDrive": "C:\\Users\\mario\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\Users\\mario\\Downloads\\cmder\\bin;C:\\Users\\mario\\Downloads\\cmder\\vendor\\bin;C:\\Users\\mario\\Downloads\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\Users\\mario\\Downloads\\cmder\\vendor\\conemu-maximus5;C:\\Users\\mario\\Downloads\\cmder\\vendor\\conemu-maximus5\\ConEmu;c:\\program files\\graphicsmagick-1.3.35-q16;c:\\program files\\graphicsmagick-1.3.33-q16;C:\\Program Files\\ImageMagick-7.0.9-Q16;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\Inkscape\\bin;C:\\Users\\mario\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\mario\\AppData\\Roaming\\npm;C:\\Users\\mario\\Downloads\\cmder\\vendor\\git-for-windows\\cmd;C:\\Users\\mario\\Downloads\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\Users\\mario\\Downloads\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\mario\\Downloads\\cmder",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 58 Stepping 9, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "3a09",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "C\bL\bI\bN\bK\b \b$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SVN_SSH": "C:\\\\Users\\\\mario\\\\Downloads\\\\cmder\\\\vendor\\\\git-for-windows\\\\bin\\\\ssh.exe",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\mario\\AppData\\Local\\Temp",
+    "TERM": "cygwin",
+    "time_init": "0",
+    "TMP": "C:\\Users\\mario\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-BS13ADS",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-BS13ADS",
+    "USERNAME": "mario",
+    "USERPROFILE": "C:\\Users\\mario",
+    "user_aliases": "C:\\Users\\mario\\Downloads\\cmder\\config\\user_aliases.cmd",
+    "verbose_output": "0",
+    "WEBPACK_DEV_SERVER": "true",
+    "windir": "C:\\WINDOWS",
+    "_prog": "node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\winmmbase.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\Users\\mario\\Downloads\\cmder\\vendor\\conemu-maximus5\\ConEmu\\ConEmuHk64.dll",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\System32\\UMPDC.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\Program Files\\Bonjour\\mdnsNSP.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\WINDOWS\\System32\\fwpuclnt.dll"
+  ]
+}

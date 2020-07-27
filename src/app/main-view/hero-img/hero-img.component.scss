@@ -62,12 +62,10 @@
   color: $color3;
 }
 .center__text__top {
-  font-family: "newCicleFina";
-  font-size: 22px;
+  font-size: 1.25rem;
   padding-bottom: 3px;
 }
 .center__text__bottom {
-  font-family: "newCicleFina";
   color: $color3;
   font-size: 18px;
 }
@@ -97,23 +95,15 @@
   .center__h1 {
     font-size: calc(2.25rem + 10 * (100vw - 360px) / (460 - 360));
   }
-}
-@media screen and (min-width: 460px) {
-  .center__h1 {
-    font-size: 2.875rem;
-  }
-}
-.center__text__top {
-  font-size: 1.25rem;
-}
-@media screen and (min-width: 360px) {
   .center__text__top {
     font-size: calc(1.25rem + 2 * (100vw - 360px) / (460 - 360));
   }
 }
 @media screen and (min-width: 460px) {
+  .center__h1 {
+    font-size: 2.875rem;
+  }
   .center__text__top {
     font-size: 1.375rem;
   }
 }
-

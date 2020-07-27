@@ -1,6 +1,7 @@
 import { Component, OnInit,Input } from '@angular/core';
 import {Notification} from '../../../_shared/notification';
 import {NotificationsService} from '../../../_services/notifications.service'
+import {MenuStateService} from '../../../_services/menu-state.service'
 @Component({
   selector: 'app-notification',
   templateUrl: './notification.component.html',
@@ -12,7 +13,7 @@ export class NotificationComponent implements OnInit {
 @Input() notification:Notification;
 iconSrc:string
 actionsActive:boolean = false;
-  constructor(private notifications:NotificationsService) {
+  constructor(private notifications:NotificationsService,private menuState:MenuStateService) {
     
    }
 
@@ -20,7 +21,11 @@ actionsActive:boolean = false;
     this.iconSrc = `/assets/img/${this.notification.icon}-icon.png`  
   }
   handleActionClick(){
-    this.notifications.openNotification(this.index)  
+    if(this.menuState.menuOpen.value===false){
+      this.notifications.openNotification(this.index)
+    }
+      
+
   }
   handleSeenClick(){
     this.notifications.seenToggle(this.index)  

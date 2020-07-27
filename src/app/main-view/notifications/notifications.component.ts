@@ -19,9 +19,8 @@ import { Subscription } from 'rxjs';
   ])]
 })
 export class NotificationsComponent implements OnInit, OnDestroy {
+ 
   subscription:Subscription;
-  notificationsHeight:number;
-  
   notificationHeight:number;
   
   notificationArray:Notification[]
@@ -40,6 +39,7 @@ export class NotificationsComponent implements OnInit, OnDestroy {
   ngOnDestroy(){
     this.subscription.unsubscribe()
   }
+  
   setHeight(){
     const notificationsHeight = window.innerHeight-window.innerWidth*4/5;    
     let itemsNumber = Math.floor(notificationsHeight/110);

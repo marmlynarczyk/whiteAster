@@ -1,11 +1,4 @@
 @import '../../_shared/variables.scss';
-.logout{
-    padding-top:30px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height:100%;
-}
 .logout__button{
     background-image:url(/assets/img/logout-icon.png);
     @include icon;
