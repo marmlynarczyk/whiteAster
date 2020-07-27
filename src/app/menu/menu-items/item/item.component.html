@@ -1,0 +1,31 @@
+<div class="bottom__border">
+  <button
+    class="item bottom__border"
+    (click)="setActive()"
+    [class.active]="active"
+  >
+    <div class="item__wrapper">
+      <div class='item__name-icon'>
+        <div class="item__icon">
+          <img
+            [src]="iconOn"
+            class="item__icon__img"
+            [class.active]="active"
+            [alt]="item.icon"
+          />
+          <img [src]="iconOff" [alt]="item.icon" />
+        </div>
+        <div class="item__name" [class.active]="active">{{ item.name }}</div>
+      </div>
+      <div class="item__counter" *ngIf="item.hasCounter">
+        {{ item.items.length }}
+      </div>
+    </div>
+  </button>
+  <div class="test"></div>
+  <div class="bottom__border subItems" #elementRef>
+    <div *ngFor="let i of item.items" class="item__subItems">
+      {{ i }}
+    </div>
+  </div>
+</div>

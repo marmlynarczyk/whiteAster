@@ -1,0 +1,25 @@
+@import '../../_shared/variables.scss';
+.notifications{
+    //height:calc(100vh - 100vw * 4 / 5 + 10px);
+    width: 100%;
+    display: block;          
+      position:relative;
+    background-color:$color3;  
+}
+.notifications:before{    
+    content:" ";
+    display:block;
+    height:10px;
+    width:100%;
+    background-color:$color3;
+    position:absolute;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;  
+    top:-10px;
+}
+
+
+.notifications__element{
+   
+    overflow: hidden;  
+}

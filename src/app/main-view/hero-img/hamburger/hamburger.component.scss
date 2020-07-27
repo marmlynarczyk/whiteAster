@@ -1,0 +1,22 @@
+.hamburger{
+    background-color: transparent;
+    border:0;
+    padding:0;
+    margin:0;
+}
+.hamburger__inner{
+    width:27px;
+    height:4px;
+    border-radius:2px;
+    background-color:white;
+    display: inline-block;;
+}
+.hamburger__box{
+    width:27px;
+    height:18px;
+    padding: 10px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    ;    
+}

@@ -1,0 +1,65 @@
+<div class="notification__wrapper">
+  <div
+    class="notification__message__wrapper"
+    [class.active]="notification.open"
+    (click)="handleActionClick()"
+  >
+    <div class="notification__message">
+      <div class="notification__message_icon">
+        <img
+          [src]="iconSrc"
+          class="notification__icon"
+          [alt]="notification.icon"
+        />
+      </div>
+      <div class="notification__box">
+        <div class="notification__top">
+          <span class="notification__top__time">{{
+            notification.time | timeAgo
+          }}</span>
+          <span class="notification__top__author">{{
+            notification.author
+          }}</span>
+        </div>
+        <div class="notification__bottom">{{ notification.text }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="notification__actions__wrapper">
+    <button class="notification__seen" (click)="handleSeenClick()">
+      <img
+        src="/assets/img/seenOn-icon.png"
+        class="notification__seenOn__img"
+        [class.active]="notification.seen"
+      />
+      <img
+        src="/assets/img/seen-icon.png"
+        class="notification__seen__img"
+        [class.active]="notification.seen"
+      />
+    </button>
+    <button
+      class="notification__liked"
+      
+      (click)="handleLikeClick()"
+    >
+    <img
+  src="/assets/img/likedOn-icon.png"
+  class="notification__likedOn__img"
+  [class.active]="notification.liked"
+/>
+    <img
+    src="/assets/img/liked-icon.png"
+    class="notification__liked__img"
+    [class.active]="notification.liked"
+  />
+</button>
+    <button class="notification__delete" (click)="handleDeleteClick()">
+      <img
+    src="/assets/img/delete-icon.png"
+    class="notification__delete__img"
+    
+  />
+    </button>
+  </div>
+</div>

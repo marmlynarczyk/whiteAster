@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@font-face{
+    font-family: 'blackJar';
+    src:url(assets/fonts/BLACKJAR.TTF);
+}
+@font-face{
+    font-family: 'newCicleFina';
+    src:url(assets/fonts/NewCicleFina.otf);
+}
+@font-face{
+    font-family: 'newCicleFinaItalic';
+    src:url(assets/fonts/NewCicleFinaItalic.otf);
+}
+body,html,*{
+    padding:0;
+    margin:0;
+    border:0;
+    font-family: 'newCicleFina'
+      
+}
+
+body,html{
+    width:100%;
+    min-height:100%;
+    background:black;
+    margin:0;
+    padding:0;
+    
+}
+*:focus{
+    outline:none;    
+}
+
+.bottom__border{
+    border-bottom: 1px solid #393d46;
+}
+.bottom__border:after{
+    content:" ";
+    width:100%;
+    height:1px;
+    border-bottom: 1px solid #191d24;
+    display: block;
+}

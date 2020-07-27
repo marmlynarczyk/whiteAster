@@ -1,0 +1,19 @@
+@import '../../_shared/variables.scss';
+.logout{
+    padding-top:30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+}
+.logout__button{
+    background-image:url(/assets/img/logout-icon.png);
+    @include icon;
+    min-width: 60px;
+    min-height: 60px;  
+    border-radius:30px;      
+}
+.logout__button:focus{
+    outline: 0;
+    box-shadow: 0px 0px 40px 5px red ;
+}

@@ -1,0 +1,119 @@
+@import "../../_shared/variables.scss";
+
+.bg {
+  background-image: url(/assets/img/profileBg.jpg);
+  height: calc(100vw * 4 / 5);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.wrapper {
+  padding: 10px 5px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  box-sizing: border-box;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top__text {
+  display: inline-block;
+  font-family: "blackJar";
+  font-size: 35px;
+  color: white;
+  line-height: 1;
+  margin-top: 3px;
+}
+.top__text__heart-icon {
+  height: 26px;
+  position: relative;
+  top: 8px;
+  left: 5px;
+  margin-right: 14px;
+}
+.top__bio-icon {
+  background-image: url(/assets/img/bio-icon.png);
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin-right: 8px;
+}
+.center {
+  text-align: center;
+  padding-top: 3vw;
+}
+.center__h1 {
+  font-family: "blackJar";
+  font-size: 2.25rem;
+  color: white;
+  font-weight: 400;
+  padding-bottom: 12px;
+}
+.color__salmon {
+  color: $color3;
+}
+.center__text__top {
+  font-family: "newCicleFina";
+  font-size: 22px;
+  padding-bottom: 3px;
+}
+.center__text__bottom {
+  font-family: "newCicleFina";
+  color: $color3;
+  font-size: 18px;
+}
+.socialMedia__button2,
+.socialMedia__button3 {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  opacity: 0.7;
+}
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 12px;
+}
+.socialMedia__button2 {
+  background-image: url(/assets/img/forrst-icon.png);
+  margin: 0 30px 0 45px;
+}
+.socialMedia__button3 {
+  background-image: url(/assets/img/be-icon.png);
+}
+@media screen and (min-width: 360px) {
+  .center__h1 {
+    font-size: calc(2.25rem + 10 * (100vw - 360px) / (460 - 360));
+  }
+}
+@media screen and (min-width: 460px) {
+  .center__h1 {
+    font-size: 2.875rem;
+  }
+}
+.center__text__top {
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 360px) {
+  .center__text__top {
+    font-size: calc(1.25rem + 2 * (100vw - 360px) / (460 - 360));
+  }
+}
+@media screen and (min-width: 460px) {
+  .center__text__top {
+    font-size: 1.375rem;
+  }
+}
+

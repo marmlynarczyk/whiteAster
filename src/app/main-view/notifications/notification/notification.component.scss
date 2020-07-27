@@ -1,0 +1,107 @@
+@import "../../../_shared/variables.scss";
+.notification__wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.notification__actions__wrapper {
+  width: 50%;
+  height: 100%;
+  background-image: url(/assets/img/action-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px;
+  z-index: 1;
+  bottom: 0%;
+  margin-top: 1px;
+  box-sizing: border-box;
+}
+
+.notification__message {
+  display: flex;
+  align-items: center;
+}
+.notification__message__wrapper {
+  background-color: $color3;
+  border-bottom: 1px solid #fc8986;
+  height: 100%;
+  width: calc(100% + 10px);
+  padding: 0 25px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-right: 10px solid #59b0bf;
+  transition: transform 0.3s cubic-bezier(0.01, -0.01, 0.22, 0.96);
+  z-index: 20;
+}
+.notification__message__wrapper.active {
+  transform: translateX(-50%);
+}
+.notification__message_icon {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.notification__icon {
+  max-width: 50px;
+  max-height: 50px;
+}
+.notification__box {
+  display: inline-block;
+}
+.notification__top {
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  font-size: 0.875rem;
+}
+.notification__top__time {
+  margin-right: 20px;
+}
+.notification__bottom {
+  font-size: 20px;
+  margin-top: 5px;
+  font-family: $font2;
+}
+.notification__seen,
+.notification__liked,
+.notification__delete {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  position: relative;
+}
+.notification__seen__img,
+.notification__liked__img,
+.notification__delete__img {
+  object-fit: none;
+  
+}
+.notification__seenOn__img,
+.notification__likedOn__img{
+    position:absolute;
+    display: none;
+}
+.notification__seenOn__img.active,
+.notification__likedOn__img.active {
+ display: inline;
+}
+.notification_delete {
+  background-image: url(/assets/img/delete-icon.png);
+}
+
+@media screen and (min-width: 360px) {
+  .notification__top {
+    font-size: calc(0.875rem + 2 * (100vw - 360px) / (460 - 360));
+  }
+}
+@media screen and (min-width: 460px) {
+  .notification__top {
+    font-size: 1rem;
+  }
+}

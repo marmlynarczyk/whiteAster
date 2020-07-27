@@ -1,0 +1,65 @@
+@import "../../../_shared/variables.scss";
+.item {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+}
+.item.active {
+  background-color: $menuActive;
+}
+.item__wrapper {
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item__icon {
+  font-size: 0px;
+  width: 55px;
+  margin-right: 30px;
+}
+.item__name {
+  color: $menuInactive;
+  font-size: 22px;
+}
+.item__name.active {
+  color: white;
+}
+.item__icon__img {
+  position: absolute;
+  opacity: 0;
+}
+.item__icon__img.active {
+  opacity: 1;
+}
+.item__counter {
+  display: inline-block;
+  width: 50px;
+  height: 32px;
+  background-color: #797e86;
+  color: white;
+
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item__subItems {
+  color: white;
+  font-size: 16px;
+  background-color: $color1;
+  padding: 5px 37px;
+  border-bottom: 1px solid #8a8a8a;
+}
+.item__subItems:first-child {
+  border-top: 1px solid #8a8a8a;
+}
+.item__name-icon {
+  display: flex;
+  align-items: center;
+}
+.subItems {
+  overflow: hidden;
+  transition: max-height 0.5s;
+  max-height: 0px;
+}

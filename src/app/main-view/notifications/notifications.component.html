@@ -1,0 +1,15 @@
+<section class="notifications">
+
+  <div
+    *ngFor="let noticationComp of notificationArray; let i = index"
+    class="notifications__element"
+    [style.height.px] = 'notificationHeight'
+    @myInsertRemoveTrigger
+  >
+    <app-notification
+      [index]="i"
+      [notification]="notificationArray[i]" 
+      
+    ></app-notification>
+  </div>
+</section>

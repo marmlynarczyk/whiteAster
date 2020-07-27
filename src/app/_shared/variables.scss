@@ -1,0 +1,21 @@
+$color1:#272d38;
+$color2:#1A5863;
+$color3:#F46E6B;
+$color4:#504A4E;
+$color5:#7F8386;
+$color6:#F2F0EF;
+$color7:#B9ADA8;
+$color8:#9A5E5D;
+$menuInactive:#9da2aa;
+$menuActive:#1B2026;
+
+$font1:'blackJar';
+$font2:'newCicleFina';
+$font3:'newCicleFinaItalic';
+@mixin icon{
+    background-color:transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 40px;
+    min-height: 40px;
+}
